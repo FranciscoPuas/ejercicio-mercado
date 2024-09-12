@@ -1,0 +1,15 @@
+<div class="container col-md-12">
+  <h1>Bienvenido a nuestro mercado</h1>
+  <div class="row">
+    {{#each productos}}
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="/img/{{nombre}}.png" class="card-img-top" alt="{{nombre}}" onclick="agregarAlCarrito('{{nombre}}')" style="cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">{{nombre}}</h5>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
